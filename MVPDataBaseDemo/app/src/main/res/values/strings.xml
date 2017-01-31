@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVPDataBaseDemo</string>
+
+    <string name="txt_password">Password</string>
+    <string name="txt_username">UserName</string>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaysingh.mvpdatabasedemo.viewactivitys.StudentInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="DATABASE"/>
+
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Student ID"/>
+
+        <EditText
+            android:id="@+id/edt_Stu_Id"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+
+        <TextView
+            android:id="@+id/tV2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Student NAME"/>
+
+        <EditText
+            android:id="@+id/edt_Stu_Name"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+        <TextView
+            android:id="@+id/tV3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Student Address"/>
+
+
+        <EditText
+            android:id="@+id/edt_Stu_Address"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+
+        <TextView
+            android:id="@+id/tV4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Student No"/>
+
+
+        <EditText
+            android:id="@+id/edt_Stu_No"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/insertbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickinsert"
+                android:layout_weight=".04"
+                android:text="INSERT"/>
+
+            <Button
+                android:id="@+id/displaybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickdisplay"
+                android:layout_weight=".04"
+                android:text="DISPLAY"/>
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickdelete"
+                android:layout_weight=".04"
+                android:text="DELETE"/>
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickupdate"
+                android:layout_weight=".04"
+                android:text="UPDATE"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
